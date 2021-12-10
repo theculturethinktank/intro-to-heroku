@@ -1,0 +1,15 @@
+<ion-navbar primary *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>XXX LIST</ion-title>
+</ion-navbar>
+
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let xxx of xxxs" (click)="itemTapped($event, xxx)">
+            <h2>{{xxx.title}}</h2>
+            <p>{{xxx.name}}</p>
+        </button>
+    </ion-list>
+</ion-content>
