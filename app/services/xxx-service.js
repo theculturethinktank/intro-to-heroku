@@ -16,7 +16,7 @@ let prettifyXxx = (xxx) => {
 
 let prettifyYyy = (yyy) => {
     return {
-        id: yyy.yyy__c_sfid,
+        id: yyy.sfid,
         title: yyy.title__c,
         xxx: prettifyXxx(yyy)
     };
