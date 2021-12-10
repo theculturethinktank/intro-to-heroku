@@ -18,7 +18,7 @@ export class XxxListPage {
     }
 
     ngOnInit() {
-        this.xxxService.findAll().subscribe(xxx => this.xxx = xxx);
+        this.xxxService.findAll().subscribe(xxxs => this.xxxs = xxxs);
     }
 
     itemTapped(event, xxx) {
