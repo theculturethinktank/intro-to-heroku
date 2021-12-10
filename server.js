@@ -23,6 +23,8 @@ client.connect();
 var propertyTable = 'property__c';
 var favoriteTable = 'favorite__c';
 var brokerTable = 'broker__c';
+var xxxTable = 'xxx__c';
+var yyyTable = 'yyy__c';
 
 // setup the demo data if needed
 client.query('SELECT * FROM salesforce.broker__c', function(error, data) {
@@ -40,6 +42,8 @@ client.query('SELECT * FROM salesforce.broker__c', function(error, data) {
     propertyTable = schema + 'property__c';
     favoriteTable = schema + 'favorite__c';
     brokerTable = schema + 'broker__c';
+    xxxTable = schema + 'xxx__c';
+    yyyTable = schema + 'yyy__c';
   }
 });
 
@@ -85,6 +89,31 @@ app.get('/broker', function(req, res) {
 app.get('/broker/:sfid', function(req, res) {
   client.query('SELECT * FROM ' + brokerTable + ' WHERE sfid = $1', [req.params.sfid], function(error, data) {
     res.json(data.rows[0]);
+  });
+});
+
+/* XXX & YYY GET, POST, DELETE CALLS */
+app.get('/xxx', function(req, res) {
+  client.query('SELECT * FROM ' + xxxTable, function(error, data) {
+    res.json(data.rows);
+  });
+});
+
+app.get('/yyy', function(req, res) {
+  client.query('SELECT ' + xxxTable + '.*, ' + yyyTable + '.sfid AS yyy__c_sfid FROM ' + xxxTable + ', ' + yyyTable + ' WHERE ' + xxxTable + '.sfid = ' + yyyTable + '.xxx__c', function(error, data) {
+    res.json(data.rows);
+  });
+});
+
+app.post('/yyy', function(req, res) {
+  client.query('INSERT INTO ' + yyyTable + ' (xxx__c) VALUES ($1)', [req.body.xxx__c], function(error, data) {
+    res.json(data);
+  });
+});
+
+app.delete('/yyy/:sfid', function(req, res) {
+  client.query('DELETE FROM ' + yyyTable + ' WHERE sfid = $1', [req.params.sfid], function(error, data) {
+    res.json(data);
   });
 });
 
