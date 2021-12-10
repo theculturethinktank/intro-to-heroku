@@ -99,6 +99,12 @@ app.get('/xxx', function(req, res) {
   });
 });
 
+app.get('/xxx/:sfid', function(req, res) {
+  client.query('SELECT * FROM ' + xxxTable + ' WHERE sfid = $1', [req.params.sfid], function(error, data) {
+    res.json(data.rows[0]);
+  });
+});
+
 app.get('/yyy', function(req, res) {
   client.query('SELECT ' + xxxTable + '.*, ' + yyyTable + '.sfid AS yyy__c_sfid FROM ' + xxxTable + ', ' + yyyTable + ' WHERE ' + xxxTable + '.sfid = ' + yyyTable + '.xxx__c', function(error, data) {
     res.json(data.rows);
