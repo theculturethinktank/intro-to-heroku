@@ -7,16 +7,17 @@ import 'rxjs/Rx';
     from the Salesforce specific naming convention. This could also be done Salesforce-side by creating a custom REST service.
  */
 let prettifyXxx = (xxx) => {
-    return {
+    let prettyXxx = {
         id: xxx.sfid,
         title: xxx.title__c,
-        name: xxx.name,
+        name: xxx.name
     };
+    return prettyXxx;
 };
 
 let prettifyYyy = (yyy) => {
     return {
-        id: yyy.sfid,
+        id: yyy.yyy__c_sfid,
         title: yyy.title__c,
         xxx: prettifyXxx(yyy)
     };
