@@ -112,7 +112,7 @@ app.get('/yyy', function(req, res) {
 });
 
 app.post('/yyy', function(req, res) {
-  client.query('INSERT INTO ' + yyyTable + ' (xxx__c) VALUES ($1)', [req.body.xxx__c], function(error, data) {
+  client.query('INSERT INTO ' + yyyTable + ' (xxx__c, unique__c) VALUES ($1, $2)', [req.body.xxx__c, requ.body.unique__c], function(error, data) {
     res.json(data);
   });
 });
