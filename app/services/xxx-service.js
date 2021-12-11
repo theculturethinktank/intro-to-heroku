@@ -21,6 +21,7 @@ let prettifyYyy = (yyy) => {
         id: yyy.yyy__c_sfid,
         title: yyy.title__c,
         unique: yyy.unique__c,
+        output: yyy.output__c,
         xxx: prettifyXxx(yyy)
     };
 };
