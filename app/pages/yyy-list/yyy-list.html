@@ -9,7 +9,7 @@
     <ion-list>
         <ion-item-sliding *ngFor="let yyy of yyys">
             <button ion-item (click)="itemTapped($event, yyy)">
-                <h2>{{yyy.xxx.title}}</h2>
+                <h2>{{yyy.xxx.title}} & {{yyy.xxx.unique}}</h2>
                 <p>{{yyy.xxx.name}}, {{yyy.xxx.id}}</p>
             </button>
             <ion-item-options>
