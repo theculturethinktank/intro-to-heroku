@@ -1,1 +1,29 @@
+<ion-navbar primary *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>XXX</ion-title>
+</ion-navbar>
 
+<ion-content class="xxx">
+    <div *ngIf="xxx" class="selection">
+        <ion-card>
+            <ion-card-content>
+                <h2 class="card-title">
+                    {{xxx.title}}
+                </h2>
+                <p>
+                    {{xxx.name}}
+                </p>
+            </ion-card-content>
+            <ion-row no-padding>
+                <ion-col>
+                    <button clear small (click)="yyy($event, xxx)">
+                        <ion-icon name="star"></ion-icon>
+                        Favorite XXX
+                    </button>
+                </ion-col>
+            </ion-row>
+        </ion-card>
+    </div>
+</ion-content>
