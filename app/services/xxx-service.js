@@ -10,6 +10,7 @@ let prettifyXxx = (xxx) => {
     let prettyXxx = {
         id: xxx.sfid,
         title: xxx.title__c,
+        unique: xxx.unique__c,
         name: xxx.name
     };
     return prettyXxx;
@@ -19,6 +20,7 @@ let prettifyYyy = (yyy) => {
     return {
         id: yyy.yyy__c_sfid,
         title: yyy.title__c,
+        unique: yyy.unique__c,
         xxx: prettifyXxx(yyy)
     };
 };
@@ -49,7 +51,7 @@ export class XxxService {
     yyy(xxx) {
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/yyy', JSON.stringify({ 'xxx__c': xxx.id }), {headers: headers});
+        return this.http.post('/yyy', JSON.stringify({ 'xxx__c': xxx.id, 'unique__c': xxx.unique }), {headers: headers});
     }
 
     unYyy(yyy) {
