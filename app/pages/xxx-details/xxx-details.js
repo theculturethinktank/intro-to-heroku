@@ -38,18 +38,10 @@ export class XxxDetailsPage {
     
     submitOutput() {
     	console.log(this.inputName);
-    	var userInput = this.inputName;
-    	console.log(userInput);
-    	/*
-        this.xxxService.output(xxx).subscribe(() => {
-            let alert = Alert.create({
-                title: 'YYY',
-                subTitle: 'XXX added to your YYY',
-                buttons: ['OK']
-            });
-            this.nav.present(alert);
+    	
+        this.xxxService.output(this.inputName).subscribe(() => {
+            
         });
-        */
     }
 
 }
