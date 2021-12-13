@@ -24,6 +24,17 @@
                     </button>
                 </ion-col>
             </ion-row>
+            <ion-row no-padding>
+                <ion-col>
+                	<ion-item>
+    					<ion-input id="inputText" placeholder="Enter some text here"></ion-input>
+  					</ion-item>
+                    <button clear small (click)="submitOutput($event, xxx)">
+                        <ion-icon name="balloon"></ion-icon>
+                        Submit Output
+                    </button>
+                </ion-col>
+            </ion-row>
         </ion-card>
     </div>
 </ion-content>
