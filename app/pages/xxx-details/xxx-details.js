@@ -38,10 +38,7 @@ export class XxxDetailsPage {
     
     submitOutput() {
     	console.log(this.inputName);
-    	
-        var headers = new Headers();
-        headers.append('Content-Type', 'application/json');
-        return this.http.post('/output', JSON.stringify({ 'output__c': this.inputName }), {headers: headers});
+    	this.xxxService.output(this.inputName).subscribe(input => this.inputName = input);
     }
 
 }
