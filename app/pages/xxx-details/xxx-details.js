@@ -36,10 +36,10 @@ export class XxxDetailsPage {
 
     }
     
-    submitOutput(event, input) {
+    submitOutput(inputName) {
         console.log(this.inputName);
         
-    	this.xxxService.output(input).subscribe();
+    	this.xxxService.output(inputName).subscribe();
     }
 
 }
