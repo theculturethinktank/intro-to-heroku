@@ -36,9 +36,11 @@ export class XxxDetailsPage {
 
     }
     
-    submitOutput() {
-    	console.log(this.inputName);
-    	this.xxxService.output(this.inputName).subscribe();
+    submitOutput(event, input) {
+        console.log(this.inputName);
+        input = this.inputName
+    	console.log(input);
+    	this.xxxService.output(input).subscribe();
     }
 
 }
