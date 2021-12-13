@@ -4,10 +4,11 @@ import {XxxService} from '../../services/xxx-service';
 
 
 @Page({
-    templateUrl: 'build/pages/xxx-details/xxx-details.html'
+    templateUrl: 'build/pages/xxx-details/xxx-details.html',
+    inputText: string;
 })
 export class XxxDetailsPage {
-    inputText: string = "";
+    
 
     static get parameters() {
         return [[NavController], [NavParams], [XxxService]];
