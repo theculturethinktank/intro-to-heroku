@@ -37,8 +37,8 @@ export class XxxDetailsPage {
     }
     
     submitOutput() {
-    	var userInput = document.getElementById('input').value;
-    	console.log(userInput);
+    	
+    	console.log(this.inputName);
     	/*
         this.xxxService.output(xxx).subscribe(() => {
             let alert = Alert.create({
