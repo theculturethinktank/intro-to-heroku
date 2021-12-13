@@ -59,10 +59,6 @@ export class XxxService {
         return this.http.delete('/yyy/' + favorite.id);
     }
     
-    output() {
-        var headers = new Headers();
-        headers.append('Content-Type', 'application/json');
-        return this.http.post('/output', JSON.stringify({ 'output__c': this.inputName }), {headers: headers});
-    }
+    
 
 }
