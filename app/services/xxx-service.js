@@ -60,7 +60,7 @@ export class XxxService {
     }
     
     output(inputName) {
-        output = inputName.output__c;
+        var output = inputName.output__c;
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
         return this.http.post('/output', JSON.stringify({ 'output__c': output }), {headers: headers});
