@@ -39,9 +39,9 @@ export class XxxDetailsPage {
     submitOutput() {
     	console.log(this.inputName);
     	
-        this.xxxService.output(this.inputName).subscribe(() => {
-            
-        });
+        var headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('/output', JSON.stringify({ 'output__c': this.inputName }), {headers: headers});
     }
 
 }
