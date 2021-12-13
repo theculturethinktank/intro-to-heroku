@@ -7,7 +7,7 @@ import {XxxService} from '../../services/xxx-service';
     templateUrl: 'build/pages/xxx-details/xxx-details.html'
 })
 export class XxxDetailsPage {
-    //inputText: string = "";
+    inputText: string = "";
 
     static get parameters() {
         return [[NavController], [NavParams], [XxxService]];
@@ -36,9 +36,9 @@ export class XxxDetailsPage {
 
     }
     
-    submitOutput(event, xxx) {
-    	/*var userInput = document.getElementById('inputText').value;
-    	console.log(this.inputText.value);*/
+    submitOutput() {
+    	/*var userInput = document.getElementById('inputText').value;*/
+    	console.log(this.inputText);
     	/*
         this.xxxService.output(xxx).subscribe(() => {
             let alert = Alert.create({
