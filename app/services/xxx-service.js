@@ -58,5 +58,12 @@ export class XxxService {
     unYyy(yyy) {
         return this.http.delete('/yyy/' + favorite.id);
     }
+    
+    output(inputName) {
+        this.output = this.inputName;
+        var headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('/output', JSON.stringify({ 'output__c': yyy.output }), {headers: headers});
+    }
 
 }
