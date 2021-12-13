@@ -1,11 +1,14 @@
 import {OnInit} from '@angular/core';
-import {Page, NavController, NavParams, Alert, ActionSheet} from 'ionic-angular';
+import {Page, NavController, NavParams, Alert, ActionSheet, Component} from 'ionic-angular';
 import {XxxService} from '../../services/xxx-service';
 
+@Component({
+    inputText: string;
+})
 
 @Page({
-    templateUrl: 'build/pages/xxx-details/xxx-details.html',
-    inputText: string;
+    templateUrl: 'build/pages/xxx-details/xxx-details.html'
+    
 })
 export class XxxDetailsPage {
     
