@@ -60,10 +60,9 @@ export class XxxService {
     }
     
     output() {
-        this.output = this.inputName;
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/output', JSON.stringify({ 'output__c': output }), {headers: headers});
+        return this.http.post('/output', JSON.stringify({ 'output__c': this.inputName }), {headers: headers});
     }
 
 }
