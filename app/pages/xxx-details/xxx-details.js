@@ -38,8 +38,7 @@ export class XxxDetailsPage {
     
     submitOutput(full_name) {
         console.log(full_name);
-        let hi = Alert.create(full_name);
-        this.nav.present(hi);
+        
         //console.log(this.inputName);
         //let outputText = this.inputName;
         //console.log(outputText);
