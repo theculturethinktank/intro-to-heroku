@@ -39,7 +39,10 @@ export class XxxDetailsPage {
     submitOutput(inputName) {
         console.log(this.inputName);
         
-    	this.xxxService.output(inputName).subscribe();
+    	this.xxxService.output(this.inputName).subscribe(() => {
+            let outputText = this.inputName
+            this.nav.push(outputText);
+        });
     }
 
 }
