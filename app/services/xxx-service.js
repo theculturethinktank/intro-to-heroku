@@ -53,7 +53,7 @@ export class XxxService {
     yyy(xxx) {
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/yyy', JSON.stringify({ 'xxx__c': xxx.id, 'unique__c': xxx.unique, output__c: xxx.output }), {headers: headers});
+        return this.http.post('/yyy', JSON.stringify({ 'xxx__c': xxx.id, 'unique__c': xxx.unique }), {headers: headers});
     }
 
     unYyy(yyy) {
