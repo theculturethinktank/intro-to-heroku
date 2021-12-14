@@ -40,12 +40,12 @@ export class XxxDetailsPage {
         console.log(this.inputName);
         let outputText = this.inputName;
         console.log(outputText);
-        /*
+        
     	this.xxxService.output(outputText).subscribe(() => {
-            
-            this.nav.push(outputText);
+            let outputText = this.inputName;
+            return outputText;
         });
-        */
+        
     }
 
 }
