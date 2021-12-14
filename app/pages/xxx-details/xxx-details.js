@@ -36,16 +36,19 @@ export class XxxDetailsPage {
 
     }
     
-    submitOutput(inputName) {
-        console.log(this.inputName);
+    submitOutput(full_name) {
+        console.log(full_name);
+        let alert = Alert(full_name);
+        this.nav.present(alert);
+        //console.log(this.inputName);
         //let outputText = this.inputName;
         //console.log(outputText);
-        
+        /*
     	this.xxxService.output(inputName).subscribe(() => {
             let outputText = this.inputName;
             return outputText;
         });
-        
+        */
     }
 
 }
