@@ -53,7 +53,7 @@ export class XxxService {
     yyy(xxx) {
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/yyy', JSON.stringify({ 'xxx__c': xxx.id, 'output__c': 'testingOutput' }), {headers: headers});
+        return this.http.post('/yyy', JSON.stringify({ 'xxx__c': xxx.id, 'output__c': xxx.output }), {headers: headers});
     }
 
     unYyy(yyy) {
@@ -65,7 +65,7 @@ export class XxxService {
         var outputTest = 'manualOUTputText';
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/output', JSON.stringify({ 'output__c': outputTest }), {headers: headers});
+        return this.http.post('/output', JSON.stringify({ 'output__c': xxx.outputTest }), {headers: headers});
     }
 
 }
