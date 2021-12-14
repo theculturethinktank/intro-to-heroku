@@ -11,7 +11,8 @@ let prettifyXxx = (xxx) => {
         id: xxx.sfid,
         title: xxx.title__c,
         unique: xxx.unique__c,
-        name: xxx.name
+        name: xxx.name,
+        output: xxx.output__c
     };
     return prettyXxx;
 };
