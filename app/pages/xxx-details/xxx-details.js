@@ -40,15 +40,11 @@ export class XxxDetailsPage {
         console.log(full_name);
         let testVar = full_name;
         console.log(testVar);
-        //console.log(this.inputName);
-        //let outputText = this.inputName;
-        //console.log(outputText);
-        /*
-    	this.xxxService.output(inputName).subscribe(() => {
-            let outputText = this.inputName;
-            return outputText;
+        
+    	this.xxxService.output(full_name).subscribe(() => {
+            
         });
-        */
+        
     }
 
 }
