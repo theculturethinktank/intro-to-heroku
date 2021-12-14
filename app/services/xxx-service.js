@@ -60,10 +60,10 @@ export class XxxService {
     }
     
     output(inputName) {
-        var output = this.inputName.value;
+        //var output = this.inputName.value;
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/output', JSON.stringify({ 'output__c': output }), {headers: headers});
+        return this.http.post('/output', JSON.stringify({ 'output__c': ngModel.$viewValue }), {headers: headers});
     }
 
 }
