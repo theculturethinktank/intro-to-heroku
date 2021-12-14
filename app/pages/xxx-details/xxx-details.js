@@ -36,6 +36,9 @@ export class XxxDetailsPage {
 
     }
     
+    let testVar1 = this.full_name;
+    console.log(testVar1);
+    
     submitOutput(full_name) {
         console.log(full_name);
         let testVar = full_name;
