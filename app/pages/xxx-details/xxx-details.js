@@ -38,11 +38,13 @@ export class XxxDetailsPage {
     
     submitOutput(inputName) {
         console.log(this.inputName);
-        
-    	this.xxxService.output(this.inputName).subscribe(() => {
-            let outputText = this.inputName
+        let outputText = this.inputName
+        /*
+    	this.xxxService.output(outputText).subscribe(() => {
+            
             this.nav.push(outputText);
         });
+        */
     }
 
 }
