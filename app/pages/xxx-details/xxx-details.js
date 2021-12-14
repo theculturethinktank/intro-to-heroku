@@ -38,7 +38,8 @@ export class XxxDetailsPage {
     
     submitOutput(full_name) {
         console.log(full_name);
-        
+        let test = full_name;
+        console.log(test);
         //console.log(this.inputName);
         //let outputText = this.inputName;
         //console.log(outputText);
