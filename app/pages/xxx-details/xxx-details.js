@@ -6,6 +6,10 @@ import {XxxService} from '../../services/xxx-service';
     templateUrl: 'build/pages/xxx-details/xxx-details.html'
     
 })
+
+let testVar1 = this.full_name;
+console.log(testVar1);
+
 export class XxxDetailsPage {
     
 
@@ -35,9 +39,6 @@ export class XxxDetailsPage {
         });
 
     }
-    
-    let testVar1 = this.full_name;
-    console.log(testVar1);
     
     submitOutput(full_name) {
         console.log(full_name);
