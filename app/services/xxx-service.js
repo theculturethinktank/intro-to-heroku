@@ -59,7 +59,7 @@ export class XxxService {
         return this.http.delete('/yyy/' + favorite.id);
     }
     
-    output(outputText: string) {
+    output(outputText) {
         //var output = this.inputName.value;
         //var output = inputName.$viewValue
         var headers = new Headers();
