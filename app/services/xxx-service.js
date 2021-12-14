@@ -59,12 +59,12 @@ export class XxxService {
         return this.http.delete('/yyy/' + favorite.id);
     }
     
-    output(inputName) {
+    output(outputText: string) {
         //var output = this.inputName.value;
-        var output = inputName.$viewValue
+        //var output = inputName.$viewValue
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/output', JSON.stringify({ 'output__c': output }), {headers: headers});
+        return this.http.post('/output', JSON.stringify({ 'output__c': outputText }), {headers: headers});
     }
 
 }
