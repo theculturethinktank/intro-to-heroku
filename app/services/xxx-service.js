@@ -65,7 +65,7 @@ export class XxxService {
         //var output = inputName.$viewValue
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/output', JSON.stringify({ 'output__c': this.outputText }), {headers: headers});
+        return this.http.post('/output', JSON.stringify({ 'output__c': {{outputText}} }), {headers: headers});
     }
 
 }
