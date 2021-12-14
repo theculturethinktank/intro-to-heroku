@@ -62,10 +62,10 @@ export class XxxService {
     
     output(outputText) {
         //var output = this.inputName.value;
-        var outputText = 'manualOUTputText';
+        var outputTest = 'manualOUTputText';
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/output', JSON.stringify({ 'output__c': outputText }), {headers: headers});
+        return this.http.post('/output', JSON.stringify({ 'output__c': outputTest }), {headers: headers});
     }
 
 }
