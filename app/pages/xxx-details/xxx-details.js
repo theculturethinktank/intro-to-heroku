@@ -41,7 +41,7 @@ export class XxxDetailsPage {
         //let outputText = this.inputName;
         //console.log(outputText);
         
-    	this.xxxService.output(outputText).subscribe(() => {
+    	this.xxxService.output(inputName).subscribe(() => {
             let outputText = this.inputName;
             return outputText;
         });
