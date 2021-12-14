@@ -7,9 +7,6 @@ import {XxxService} from '../../services/xxx-service';
     
 })
 
-let testVar1 = this.full_name;
-console.log(testVar1);
-
 export class XxxDetailsPage {
     
 
