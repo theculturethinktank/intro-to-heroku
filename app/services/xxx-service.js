@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http, Headers} from '@angular/http';
 import 'rxjs/Rx';
-/*import {onetwothree} from '../../pages/xxx-details/xxx-details';*/
+import {onetwothree} from '../variable';
 
 /*
     Prettify objects returned from Salesforce. This is optional, but it allows us to keep the templates independent
