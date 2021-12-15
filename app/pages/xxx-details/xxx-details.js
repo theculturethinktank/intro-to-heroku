@@ -2,21 +2,12 @@ import {OnInit} from '@angular/core';
 import {Page, NavController, NavParams, Alert, ActionSheet} from 'ionic-angular';
 import {XxxService} from '../../services/xxx-service';
 
-var testVar = '';
+/*var testVar = '';*/
 
 @Page({
     templateUrl: 'build/pages/xxx-details/xxx-details.html'
     
 })
-
-/*
-var onetwothree;
-let onetwothree = { 
-    num: '123'
-};
-export{onetwothree}
-*/
-
 
 export class XxxDetailsPage {
     
