@@ -50,12 +50,12 @@ export class XxxDetailsPage {
         console.log(this.inputName);
         let testVar = this.inputName;
         console.log(testVar);
-        return testVar;
-        /*
-    	this.xxxService.output(inputName).subscribe(() => {
-            
+        
+        
+    	this.xxxService.output(testVar).subscribe(() => {
+            return testVar;
         });
-        */
+        
     }
 
 }
