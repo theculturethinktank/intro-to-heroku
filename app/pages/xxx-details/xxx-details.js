@@ -44,12 +44,12 @@ export class XxxDetailsPage {
 
     }
     
-    submitOutput(full_name) {
-        console.log(full_name);
-        let testVar = full_name;
+    submitOutput(inputName) {
+        console.log(this.inputName);
+        let testVar = this.inputName;
         console.log(testVar);
         
-    	this.xxxService.output(full_name).subscribe(() => {
+    	this.xxxService.output(inputName).subscribe(() => {
             
         });
         
