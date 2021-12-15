@@ -68,7 +68,7 @@ export class XxxService {
         testVar2 = this.testVar;
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('/output', JSON.stringify({ 'output__c': testVar }), {headers: headers});
+        return this.http.post('/output', JSON.stringify({ 'output__c': testVar2 }), {headers: headers});
     }
 
 }
