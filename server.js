@@ -127,7 +127,7 @@ app.delete('/yyy/:sfid', function(req, res) {
 /* Post call inserting the output field into the database*/
 app.post('/output', function(req, res) {
   //let randName = Math.floor(Math.random() * 10000000000);
-  client.query('INSERT INTO ' + yyyTable + ' (output__c) VALUES ($1)', [testVar], function(error, data) {
+  client.query('INSERT INTO ' + yyyTable + ' (output__c) VALUES ($1)', [testVar2], function(error, data) {
     res.json(data);
   });
 });
