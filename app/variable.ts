@@ -1,1 +1,1 @@
-export var onetwothree = '123';
+export var onetwothree:string = '123';
