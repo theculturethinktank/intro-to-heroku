@@ -48,7 +48,7 @@ export class XxxDetailsPage {
         console.log(full_name);
         let testVar = full_name;
         console.log(testVar);
-        export testVar;
+        export {testVar};
     	this.xxxService.output(full_name).subscribe(() => {
             
         });
