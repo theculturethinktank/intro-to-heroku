@@ -46,9 +46,11 @@ export class XxxDetailsPage {
 
     }
     
+    let testVar = '';
+
     submitOutput(inputName) {
         //console.log(this.inputName);
-        let testVar = this.inputName;
+        testVar = this.inputName;
         //console.log(testVar);
         
         this.xxxService.output(this.testVar).subscribe();
