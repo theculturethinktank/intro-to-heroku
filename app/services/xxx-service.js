@@ -27,7 +27,7 @@ let prettifyYyy = (yyy) => {
     };
 };
 
-
+let onetwothree = '123';
 
 @Injectable()
 export class XxxService {
@@ -53,7 +53,7 @@ export class XxxService {
     }
 
     yyy(xxx) {
-        var randNumber = '123';
+        var randNumber = onetwothree;
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
         return this.http.post('/yyy', JSON.stringify({ 'xxx__c': xxx.id, 'output__c': randNumber }), {headers: headers});
