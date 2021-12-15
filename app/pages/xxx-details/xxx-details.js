@@ -7,7 +7,7 @@ import {XxxService} from '../../services/xxx-service';
     
 })
 
-let onetwothree = '123';
+
 
 export class XxxDetailsPage {
     
