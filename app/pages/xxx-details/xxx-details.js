@@ -7,7 +7,10 @@ import {XxxService} from '../../services/xxx-service';
     
 })
 
-
+let onetwothree = { 
+    num: '123'
+}
+export{onetwothree}
 
 export class XxxDetailsPage {
     
