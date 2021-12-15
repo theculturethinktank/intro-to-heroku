@@ -47,12 +47,13 @@ export class XxxDetailsPage {
     }
     
     submitOutput(inputName) {
-        console.log(this.inputName);
+        //console.log(this.inputName);
         let testVar = this.inputName;
-        console.log(testVar);
+        //console.log(testVar);
         
         
-    	this.xxxService.output(testVar).subscribe(() => {
+    	this.xxxService.output(this.testVar).subscribe(() => {
+            console.log(this.testVar);
             return testVar;
         });
         
