@@ -2,6 +2,8 @@ import {OnInit} from '@angular/core';
 import {Page, NavController, NavParams, Alert, ActionSheet} from 'ionic-angular';
 import {XxxService} from '../../services/xxx-service';
 
+let testVar = '';
+
 @Page({
     templateUrl: 'build/pages/xxx-details/xxx-details.html'
     
@@ -46,7 +48,7 @@ export class XxxDetailsPage {
 
     }
     
-    let testVar = '';
+    
 
     submitOutput(inputName) {
         //console.log(this.inputName);
