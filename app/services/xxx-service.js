@@ -36,6 +36,9 @@ export class XxxService {
     static get parameters() {
         return [Http];
     }
+    
+//sender test
+    public variable1: String;
 
     constructor(http) {
         this.http = http;
