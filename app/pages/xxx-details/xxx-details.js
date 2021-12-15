@@ -51,9 +51,8 @@ export class XxxDetailsPage {
     	this.xxxService.output(testVar).subscribe(() => {
             //console.log(testVar);
             return testVar;
-        */
         });
-        
+        */
     }
 
 }
