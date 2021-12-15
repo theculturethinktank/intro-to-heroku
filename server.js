@@ -26,7 +26,6 @@ var brokerTable = 'broker__c';
 var xxxTable = 'xxx__c';
 var yyyTable = 'yyy__c';
 
-
 // setup the demo data if needed
 client.query('SELECT * FROM salesforce.broker__c', function(error, data) {
   if (error !== null) {
