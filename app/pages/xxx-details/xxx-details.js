@@ -45,7 +45,7 @@ export class XxxDetailsPage {
         });
 
     }
-    console.log(this.inputName);
+    
     submitOutput(inputName) {
         //console.log(this.inputName);
         //let testVar = this.inputName;
