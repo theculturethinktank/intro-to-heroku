@@ -51,7 +51,7 @@ export class XxxDetailsPage {
         let testVar = this.inputName;
         //console.log(testVar);
         
-        this.xxxService.output(this.testVar);
+        this.xxxService.output(this.testVar).subscribe();
         /*
     	this.xxxService.output(this.testVar).subscribe(() => {
             console.log(this.testVar);
