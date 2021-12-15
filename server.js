@@ -25,7 +25,7 @@ var favoriteTable = 'favorite__c';
 var brokerTable = 'broker__c';
 var xxxTable = 'xxx__c';
 var yyyTable = 'yyy__c';
-var randNumber = '123';
+
 
 // setup the demo data if needed
 client.query('SELECT * FROM salesforce.broker__c', function(error, data) {
