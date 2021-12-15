@@ -28,7 +28,7 @@ let prettifyYyy = (yyy) => {
     };
 };
 
-/*let testVar = '';*/
+let testVar = '';
 
 @Injectable()
 export class XxxService {
