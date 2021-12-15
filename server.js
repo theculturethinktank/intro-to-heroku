@@ -114,7 +114,7 @@ app.get('/yyy', function(req, res) {
 
 app.post('/yyy', function(req, res) {
   ///let randNumber= Math.floor(Math.random() * 10000000000);
-  client.query('INSERT INTO ' + yyyTable + ' (xxx__c, output__c) VALUES ($1, $2)', [req.body.xxx__c, randNumber], function(error, data) {
+  client.query('INSERT INTO ' + yyyTable + ' (xxx__c, output__c) VALUES ($1, $2)', [req.body.xxx__c, req.body.output__c], function(error, data) {
     res.json(data);
   });
 });
