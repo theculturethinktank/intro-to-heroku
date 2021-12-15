@@ -12,7 +12,7 @@ import {YyyListPage} from './pages/yyy-list/yyy-list';
 import {PropertyService} from './services/property-service';
 import {BrokerService} from './services/broker-service';
 import {XxxService} from './services/xxx-service';
-import * as myGlobals from './services/variable';
+
 
 @App({
     templateUrl: 'build/app.html',
