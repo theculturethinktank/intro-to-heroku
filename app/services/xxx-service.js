@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http, Headers} from '@angular/http';
 import 'rxjs/Rx';
+import {onetwothree} from '../../pages/xxx-details/xxx-details';
 
 /*
     Prettify objects returned from Salesforce. This is optional, but it allows us to keep the templates independent
@@ -27,7 +28,7 @@ let prettifyYyy = (yyy) => {
     };
 };
 
-let onetwothree = '123';
+
 
 @Injectable()
 export class XxxService {
