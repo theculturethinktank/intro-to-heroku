@@ -27,6 +27,8 @@ let prettifyYyy = (yyy) => {
     };
 };
 
+let randNumber = '123';
+
 @Injectable()
 export class XxxService {
 
