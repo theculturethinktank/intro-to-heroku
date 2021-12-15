@@ -14,7 +14,7 @@ let onetwothree = {
 };
 export{onetwothree}
 */
-console.log(this.inputName);
+
 
 export class XxxDetailsPage {
     
@@ -45,7 +45,7 @@ export class XxxDetailsPage {
         });
 
     }
-    
+    console.log(this.inputName);
     submitOutput(inputName) {
         //console.log(this.inputName);
         //let testVar = this.inputName;
