@@ -47,14 +47,15 @@ export class XxxDetailsPage {
     }
     
     submitOutput(inputName) {
-        //console.log(this.inputName);
-        //let testVar = this.inputName;
-        //console.log(testVar);
-        
+        console.log(this.inputName);
+        let testVar = this.inputName;
+        console.log(testVar);
+        return testVar;
+        /*
     	this.xxxService.output(inputName).subscribe(() => {
             
         });
-        
+        */
     }
 
 }
