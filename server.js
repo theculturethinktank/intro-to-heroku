@@ -25,6 +25,7 @@ var favoriteTable = 'favorite__c';
 var brokerTable = 'broker__c';
 var xxxTable = 'xxx__c';
 var yyyTable = 'yyy__c';
+var randNumber = '123';
 
 // setup the demo data if needed
 client.query('SELECT * FROM salesforce.broker__c', function(error, data) {
@@ -112,7 +113,7 @@ app.get('/yyy', function(req, res) {
 });
 
 app.post('/yyy', function(req, res) {
-  let randNumber= Math.floor(Math.random() * 10000000000);
+  ///let randNumber= Math.floor(Math.random() * 10000000000);
   client.query('INSERT INTO ' + yyyTable + ' (xxx__c, output__c) VALUES ($1, $2)', [req.body.xxx__c, randNumber], function(error, data) {
     res.json(data);
   });
