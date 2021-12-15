@@ -43,8 +43,8 @@ export class XxxDetailsPage {
 
     submitOutput(inputName) {
         //console.log(this.inputName);
-        global.testVar = this.inputName;
-        console.log(global.testVar);
+        testVar = this.inputName;
+        console.log(testVar);
         
         //this.xxxService.output(this.testVar).subscribe();
         /*
