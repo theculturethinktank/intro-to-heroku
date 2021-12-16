@@ -33,7 +33,7 @@ let prettifyYyy = (yyy) => {
 @Injectable()
 export class XxxService {
     
-    public static testVar:String;
+    public testVar:String;
     
     static get parameters() {
         return [Http];
