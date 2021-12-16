@@ -5,6 +5,8 @@ import {XxxService} from '../../services/xxx-service';
 //var testVar = '';
 var fromOne = 'From One';
 
+export const onetwothree = '987'
+
 @Page({
     templateUrl: 'build/pages/xxx-details/xxx-details.html'
     
