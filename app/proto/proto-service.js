@@ -30,7 +30,7 @@ let prettifyYyy = (yyy) => {
 export class ProtoPage {
 
     static get parameters() {
-        return [[NavController], [Http]];
+        return [[Http], [NavController]];
     }
 
     constructor(nav, http) {
@@ -55,12 +55,12 @@ export class ProtoPage {
     }
 
     submitOutput() {
+        console.log(this.inputName);
         var randNumber = this.inputName;
+        console.log(randNumber)'
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
         return this.http.post('/output', JSON.stringify({ 'output__c': randNumber }), {headers: headers});
     }
-
-    
 
 }
