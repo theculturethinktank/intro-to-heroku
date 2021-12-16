@@ -45,6 +45,7 @@ export class XxxDetailsPage {
     
 
     submitOutput(inputName) {
+        console.log(this.xxxService.testVar = this.fromOne);
         //console.log(this.senderService.variableOne = this.fromOne);
         //this.router.navigate(["../../services/xxx-service"]);
         
