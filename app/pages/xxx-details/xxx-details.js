@@ -1,8 +1,10 @@
 import {OnInit} from '@angular/core';
 import {Page, NavController, NavParams, Alert, ActionSheet} from 'ionic-angular';
+import {Router} from '@angular/router';
 import {XxxService} from '../../services/xxx-service';
+import {SenderService} from '../../services/sender-service';
 
-var testVar = '';
+//var testVar = '';
 
 @Page({
     templateUrl: 'build/pages/xxx-details/xxx-details.html'
@@ -10,7 +12,7 @@ var testVar = '';
 })
 
 export class XxxDetailsPage {
-    
+    private fromOne = 'From One';
 
     static get parameters() {
         return [[NavController], [NavParams], [XxxService]];
@@ -18,7 +20,7 @@ export class XxxDetailsPage {
     
     // testing private fromOne = 'From One'
 
-    constructor(nav, navParams, xxxService) {
+    constructor(nav, navParams, xxxService, private router: Router, private service: SenderService) {
         this.nav = nav;
         this.xxxService = xxxService;
         this.xxx = navParams.get('xxx');
@@ -44,9 +46,12 @@ export class XxxDetailsPage {
     
 
     submitOutput(inputName) {
+        console.log(this.service.variableOne = this.fromOne);
+        //this.router.navigate(["../../services/xxx-service"]);
+        
         //console.log(this.inputName);
-        testVar = this.inputName;
-        console.log(testVar);
+        //testVar = this.inputName;
+        //console.log(testVar);
         
         //this.xxxService.output(this.testVar).subscribe();
         /*
