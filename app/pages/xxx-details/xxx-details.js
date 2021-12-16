@@ -12,7 +12,7 @@ import {SenderService} from '../../services/sender-service';
 })
 
 export class XxxDetailsPage {
-    private fromOne = 'From One';
+    private fromOne = "From One"
 
     static get parameters() {
         return [[NavController], [NavParams], [XxxService], [SenderService]];
