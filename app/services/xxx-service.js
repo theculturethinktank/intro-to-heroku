@@ -28,7 +28,7 @@ let prettifyYyy = (yyy) => {
     };
 };
 
-//let testVar = '';
+let testVar = '';
 
 @Injectable()
 export class XxxService {
@@ -36,8 +36,6 @@ export class XxxService {
     static get parameters() {
         return [Http];
     }
-    
-    var variableOne = '';
 
     constructor(http) {
         this.http = http;
