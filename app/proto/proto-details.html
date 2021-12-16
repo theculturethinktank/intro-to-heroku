@@ -1,1 +1,20 @@
+<ion-navbar primary *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Proto To Have To Work!!! Please!</ion-title>
+</ion-navbar>
 
+<ion-content>
+    <ion-card>
+        <ion-row no-padding>
+            <ion-col>
+                <ion-input type="text" value="" placeholder="Enter Text Here" [(ngModel)]="inputName"></ion-input>
+                <button clear small (click)="submitOutput()">
+                    <ion-icon name="star"></ion-icon>
+                    Submit Output
+                </button>
+            </ion-col>
+         </ion-row>
+    </ion-card>
+</ion-content>
