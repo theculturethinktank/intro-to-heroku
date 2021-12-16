@@ -16,7 +16,7 @@ export class XxxDetailsPage {
         return [[NavController], [NavParams], [XxxService]];
     }
     
-    private fromOne = 'From One'
+    // testing private fromOne = 'From One'
 
     constructor(nav, navParams, xxxService) {
         this.nav = nav;
