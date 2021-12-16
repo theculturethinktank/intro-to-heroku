@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
-
+public variableOne: String;
 @Injectable()
 export class SenderService {
   
-  public variableOne: String;
+  //public variableOne: String;
 
   constructor() {}
   
