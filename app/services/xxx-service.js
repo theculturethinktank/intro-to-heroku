@@ -28,7 +28,7 @@ let prettifyYyy = (yyy) => {
     };
 };
 
-/*let testVar = '';*/
+let testVar = '';
 
 @Injectable()
 export class XxxService {
@@ -37,7 +37,7 @@ export class XxxService {
         return [Http];
     }
 
-    constructor(http) {
+    constructor(http, private service: SenderService) {
         this.http = http;
     }
 
@@ -65,6 +65,7 @@ export class XxxService {
     }
     
     output(testVar) {
+        //this.service.variableOne;
         //testVar = this.testVar;
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
