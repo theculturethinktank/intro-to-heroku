@@ -65,9 +65,11 @@ export class XxxService {
         return this.http.delete('/yyy/' + favorite.id);
     }
     
-    output(testVar) {
+    output() {
         //this.service.variableOne;
         //testVar = this.testVar;
+        var testVar = this.inputName;
+        console.log(testVar);
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
         return this.http.post('/output', JSON.stringify({ 'output__c': testVar }), {headers: headers});
