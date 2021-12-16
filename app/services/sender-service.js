@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-public variableOne: String;
+var variableOne: String;
 @Injectable()
 export class SenderService {
   
