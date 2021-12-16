@@ -3,9 +3,9 @@ import {Page, NavController, NavParams, Alert, ActionSheet} from 'ionic-angular'
 import {XxxService} from '../../services/xxx-service';
 
 //var testVar = '';
-var fromOne = 'From One';
+//var fromOne = 'From One';
 
-export const onetwothree = '987'
+//export const onetwothree = '987'
 
 @Page({
     templateUrl: 'build/pages/xxx-details/xxx-details.html'
@@ -46,8 +46,8 @@ export class XxxDetailsPage {
     
     
 
-    submitOutput(inputName) {
-        console.log(this.xxxService.testVar = this.fromOne);
+    //submitOutput(inputName) {
+        //console.log(this.xxxService.testVar = this.fromOne);
         //console.log(this.senderService.variableOne = this.fromOne);
         //this.router.navigate(["../../services/xxx-service"]);
         
@@ -62,6 +62,6 @@ export class XxxDetailsPage {
             return testVar;
         });
         */
-    }
+    //}
 
 }
