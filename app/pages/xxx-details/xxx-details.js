@@ -12,12 +12,12 @@ import {SenderService} from '../../services/sender-service';
 })
 
 export class XxxDetailsPage {
-    
+    private fromOne = 'From One';
 
     static get parameters() {
         return [[NavController], [NavParams], [XxxService], [SenderService]];
     }
-    private fromOne = 'From One';
+    
     // testing private fromOne = 'From One'
 
     constructor(nav, navParams, xxxService, private service: SenderService) {
