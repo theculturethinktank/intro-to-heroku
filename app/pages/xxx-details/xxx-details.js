@@ -1,7 +1,6 @@
 import {OnInit} from '@angular/core';
 import {Page, NavController, NavParams, Alert, ActionSheet} from 'ionic-angular';
 import {XxxService} from '../../services/xxx-service';
-import {SenderService} from '../../services/sender-service';
 
 //var testVar = '';
 var fromOne = 'From One';
@@ -15,15 +14,14 @@ export class XxxDetailsPage {
     //private fromOne = "From One" - Doesn't like calling this inside the export class
 
     static get parameters() {
-        return [[NavController], [NavParams], [XxxService], [SenderService]];
+        return [[NavController], [NavParams], [XxxService]];
     }
     
     // testing private fromOne = 'From One'
 
-    constructor(nav, navParams, xxxService, senderService) {
+    constructor(nav, navParams, xxxService) {
         this.nav = nav;
         this.xxxService = xxxService;
-        this.senderService = senderService;
         this.xxx = navParams.get('xxx');
     }
 
@@ -47,7 +45,7 @@ export class XxxDetailsPage {
     
 
     submitOutput(inputName) {
-        console.log(this.senderService.variableOne = this.fromOne);
+        //console.log(this.senderService.variableOne = this.fromOne);
         //this.router.navigate(["../../services/xxx-service"]);
         
         //console.log(this.inputName);
