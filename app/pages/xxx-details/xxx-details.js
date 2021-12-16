@@ -20,9 +20,10 @@ export class XxxDetailsPage {
     
     // testing private fromOne = 'From One'
 
-    constructor(nav, navParams, xxxService, private service: SenderService) {
+    constructor(nav, navParams, xxxService, senderService) {
         this.nav = nav;
         this.xxxService = xxxService;
+        this.senderService = senderService;
         this.xxx = navParams.get('xxx');
     }
 
@@ -46,7 +47,7 @@ export class XxxDetailsPage {
     
 
     submitOutput(inputName) {
-        console.log(this.service.variableOne = this.fromOne);
+        console.log(this.senderService.variableOne = this.fromOne);
         //this.router.navigate(["../../services/xxx-service"]);
         
         //console.log(this.inputName);
