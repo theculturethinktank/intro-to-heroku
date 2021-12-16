@@ -1,6 +1,6 @@
 import {OnInit} from '@angular/core';
 import {Page, NavController, NavParams, Alert, ActionSheet} from 'ionic-angular';
-import {Router} from '@angular/router';
+
 import {XxxService} from '../../services/xxx-service';
 import {SenderService} from '../../services/sender-service';
 
@@ -20,7 +20,7 @@ export class XxxDetailsPage {
     
     // testing private fromOne = 'From One'
 
-    constructor(nav, navParams, xxxService, private router: Router, private service: SenderService) {
+    constructor(nav, navParams, xxxService, private service: SenderService) {
         this.nav = nav;
         this.xxxService = xxxService;
         this.xxx = navParams.get('xxx');
