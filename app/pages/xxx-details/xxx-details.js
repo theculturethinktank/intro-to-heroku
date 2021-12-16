@@ -1,10 +1,10 @@
 import {OnInit} from '@angular/core';
 import {Page, NavController, NavParams, Alert, ActionSheet} from 'ionic-angular';
-
 import {XxxService} from '../../services/xxx-service';
 import {SenderService} from '../../services/sender-service';
 
 //var testVar = '';
+var fromOne = 'From One';
 
 @Page({
     templateUrl: 'build/pages/xxx-details/xxx-details.html'
@@ -12,7 +12,7 @@ import {SenderService} from '../../services/sender-service';
 })
 
 export class XxxDetailsPage {
-    private fromOne = "From One"
+    //private fromOne = "From One" - Doesn't like calling this inside the export class
 
     static get parameters() {
         return [[NavController], [NavParams], [XxxService], [SenderService]];
