@@ -15,6 +15,8 @@ export class XxxDetailsPage {
     static get parameters() {
         return [[NavController], [NavParams], [XxxService]];
     }
+    
+    private fromOne = 'From One'
 
     constructor(nav, navParams, xxxService) {
         this.nav = nav;
