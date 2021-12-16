@@ -37,7 +37,7 @@ export class XxxService {
         return [Http];
     }
     
-    public variableOne: String;
+    var variableOne: String;
 
     constructor(http) {
         this.http = http;
