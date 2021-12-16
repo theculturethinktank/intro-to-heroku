@@ -15,7 +15,7 @@ export class XxxDetailsPage {
     
 
     static get parameters() {
-        return [[NavController], [NavParams], [XxxService], [SenderService];
+        return [[NavController], [NavParams], [XxxService], [SenderService]];
     }
     private fromOne = 'From One';
     // testing private fromOne = 'From One'
