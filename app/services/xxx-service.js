@@ -28,11 +28,13 @@ let prettifyYyy = (yyy) => {
     };
 };
 
-let testVar = '';
+//let testVar = '';
 
 @Injectable()
 export class XxxService {
-
+    
+    testVar:String;
+    
     static get parameters() {
         return [Http];
     }
