@@ -14,7 +14,7 @@ import {XxxService} from '../../services/xxx-service';
 
 export class XxxDetailsPage {
     //private fromOne = "From One" - Doesn't like calling this inside the export class
-    inputName;
+    
     static get parameters() {
         return [[NavController], [NavParams], [XxxService]];
     }
