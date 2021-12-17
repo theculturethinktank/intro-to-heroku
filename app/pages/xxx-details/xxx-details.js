@@ -14,7 +14,7 @@ import {XxxService} from '../../services/xxx-service';
 
 export class XxxDetailsPage {
     //private fromOne = "From One" - Doesn't like calling this inside the export class
-
+    inputName;
     static get parameters() {
         return [[NavController], [NavParams], [XxxService]];
     }
@@ -46,7 +46,7 @@ export class XxxDetailsPage {
     
     
 
-    //submitOutput(inputName) {
+    submitOutput() {
         //console.log(this.xxxService.testVar = this.fromOne);
         //console.log(this.senderService.variableOne = this.fromOne);
         //this.router.navigate(["../../services/xxx-service"]);
@@ -55,13 +55,16 @@ export class XxxDetailsPage {
         //testVar = this.inputName;
         //console.log(testVar);
         
-        //this.xxxService.output(this.testVar).subscribe();
+        this.xxxService.output(this.inputName).subscribe((result) => {
+            console.log(result);
+            // todo where to send the user
+        });
         /*
     	this.xxxService.output(testVar).subscribe(() => {
             //console.log(testVar);
             return testVar;
         });
         */
-    //}
+    }
 
 }
