@@ -65,7 +65,7 @@ export class XxxService {
         return this.http.delete('/yyy/' + favorite.id);
     }
     
-    output(inputName) {
+    output(xxx, inputName) {
         //this.service.variableOne;
         //testVar = this.testVar;
         //var testVar = this.inputName;
