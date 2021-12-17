@@ -2,25 +2,17 @@ import {OnInit} from '@angular/core';
 import {Page, NavController, NavParams, Alert, ActionSheet} from 'ionic-angular';
 import {XxxService} from '../../services/xxx-service';
 
-//var testVar = '';
-//var fromOne = 'From One';
-
-//export const onetwothree = '987'
-
 @Page({
     templateUrl: 'build/pages/xxx-details/xxx-details.html'
     
 })
 
 export class XxxDetailsPage {
-    //private fromOne = "From One" - Doesn't like calling this inside the export class
     
     static get parameters() {
         return [[NavController], [NavParams], [XxxService]];
     }
     
-    // testing private fromOne = 'From One'
-
     constructor(nav, navParams, xxxService) {
         this.nav = nav;
         this.xxxService = xxxService;
@@ -43,28 +35,19 @@ export class XxxDetailsPage {
         });
 
     }
-    
-    
 
-    submitOutput() {
-        //console.log(this.xxxService.testVar = this.fromOne);
-        //console.log(this.senderService.variableOne = this.fromOne);
-        //this.router.navigate(["../../services/xxx-service"]);
+    submitOutput(event, xxx) {
         
-        //console.log(this.inputName);
-        //testVar = this.inputName;
-        //console.log(testVar);
-        
-        this.xxxService.output(this.inputName).subscribe((result) => {
+        this.xxxService.output(xxx, this.inputName).subscribe((result) => {
             console.log(result);
             // todo where to send the user
+            let alert = Alert.create({
+                title: 'User Input',
+                subTitle: this.inputName + ' was added to your YYY',
+                buttons: ['OK']
+            });
+            this.nav.present(alert);
         });
-        /*
-    	this.xxxService.output(testVar).subscribe(() => {
-            //console.log(testVar);
-            return testVar;
-        });
-        */
     }
 
 }
