@@ -12,7 +12,6 @@ import {YyyListPage} from './pages/yyy-list/yyy-list';
 import {PropertyService} from './services/property-service';
 import {BrokerService} from './services/broker-service';
 import {XxxService} from './services/xxx-service';
-import {ProtoPage} from './proto/proto-service';
 
 
 @App({
@@ -23,7 +22,7 @@ import {ProtoPage} from './proto/proto-service';
     queries: {
         nav: new ViewChild('content')
     },
-    providers: [HTTP_PROVIDERS, PropertyService, BrokerService, XxxService, ProtoPage]
+    providers: [HTTP_PROVIDERS, PropertyService, BrokerService, XxxService]
 })
 class MyApp {
 
@@ -41,8 +40,7 @@ class MyApp {
             {title: 'Brokers', component: BrokerListPage, icon: "people"},
             {title: 'Favorites', component: FavoriteListPage, icon: "star"},
             {title: 'XXX', component: XxxListPage, icon: "star"},
-            {title: 'YYY', component: YyyListPage, icon: "star"},
-            {title: 'PROTO', component: ProtoPage, icon: "people"}
+            {title: 'YYY', component: YyyListPage, icon: "star"}
         ];
 
         this.rootPage = WelcomePage;
